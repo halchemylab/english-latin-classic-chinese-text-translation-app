@@ -93,7 +93,7 @@ def main():
             st.session_state.english_text, "English", "Classical Chinese")
         
         # Update the interface with translations
-        st.experimental_rerun()
+        st.rerun()
         
     elif st.session_state.active_lang == "Latin" and st.session_state.latin_text:
         # Translate Latin to English and Chinese
@@ -103,7 +103,7 @@ def main():
             st.session_state.latin_text, "Latin", "Classical Chinese")
         
         # Update the interface with translations
-        st.experimental_rerun()
+        st.rerun()
         
     elif st.session_state.active_lang == "Classical Chinese" and st.session_state.chinese_text:
         # Translate Chinese to English and Latin
@@ -113,7 +113,7 @@ def main():
             st.session_state.chinese_text, "Classical Chinese", "Latin")
         
         # Update the interface with translations
-        st.experimental_rerun()
+        st.rerun()
     
     # Information about API key setup
     st.divider()
